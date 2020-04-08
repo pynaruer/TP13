@@ -14,13 +14,13 @@ class BinaryTree() :
             return False
 
 
-arbre = BinaryTree(Node(12,None,None))
-arbre.getRoot().setLeft(Node(5,None,None))
-arbre.getRoot().getLeft().setLeft(Node(4,None,None))
-arbre.getRoot().getLeft().setRight(Node(6,None,None))
-arbre.getRoot().getLeft().getLeft().setLeft(Node(3,None,None))
+tree = BinaryTree(Node(12,None,None))
+tree.getRoot().setLeft(Node(5,None,None))
+tree.getRoot().getLeft().setLeft(Node(4,None,None))
+tree.getRoot().getLeft().setRight(Node(6,None,None))
+tree.getRoot().getLeft().getLeft().setLeft(Node(3,None,None))
 
-arbre.getRoot().setRight(Node(17,None,None))
-arbre.getRoot().getRight().setRight(Node(19,None,None))
-arbre.getRoot().getRight().getRight().setLeft(Node(18,None,None))
-arbre.getRoot().getRight().getRight().setRight(Node(21,None,None))
+tree.getRoot().setRight(Node(17,None,None))
+tree.getRoot().getRight().setRight(Node(19,None,None))
+tree.getRoot().getRight().getRight().setLeft(Node(18,None,None))
+tree.getRoot().getRight().getRight().setRight(Node(21,None,None))

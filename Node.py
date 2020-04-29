@@ -20,4 +20,4 @@ node1 = Node(1,None,None)
 node2 = Node(2,None,None)
 node3 = Node(3,node1,node2)
 
-print(node3.getRight().getVal())
+#print(node3.getRight().getVal())

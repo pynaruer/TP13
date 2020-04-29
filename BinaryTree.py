@@ -19,7 +19,7 @@ class BinaryTree():
         if node is None:
             return 0
         else:
-            return self.size(node.getLeft()) + 1 + self.size(node.getRight())
+            return self.size(node.getLeft())+self.size(node.getRight())+1
 
     def printValues(self, node):
         if node is None:
@@ -39,19 +39,19 @@ class BinaryTree():
         elif node.getLeft() == None and node.getRight() == None:
             return 1
         else:
-            return self.numberLeaves(node.getLeft()) + self.numberLeaves(node.getRight())
+            return self.numberLeaves(node.getLeft())+self.numberLeaves(node.getRight())
 
     def numberInternalNodes(self, node):
         if node == None or (node.getLeft() == None and node.getRight() == None):
             return 0
         else:
-            return self.numberInternalNodes(node.getLeft()) + 1 + self.numberInternalNodes(node.getRight())
+            return self.numberInternalNodes(node.getLeft())+self.numberInternalNodes(node.getRight())+1
 
     def height(self, node, s=-1):
         if node == None:
             return s
         else:
-            
+
 
 #PRINCIPAL
 

@@ -47,10 +47,11 @@ class BinaryTree():
         else:
             return self.numberInternalNodes(node.getLeft())+self.numberInternalNodes(node.getRight())+1
 
-    def height(self, node, s=-1):
+    def height(self, node, x=-1):
         if node == None:
-            return s
+            return x
         else:
+            
 
 
 #PRINCIPAL

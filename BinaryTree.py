@@ -67,17 +67,17 @@ class BinaryTree():
 
 #PRINCIPAL
 
-tree = BinaryTree(Node(12,None,None))
+tree = BinaryTree(Node(12))
 
-tree.getRoot().setLeft(Node(5,None,None))
-tree.getRoot().getLeft().setLeft(Node(4,None,None))
-tree.getRoot().getLeft().setRight(Node(6,None,None))
-tree.getRoot().getLeft().getLeft().setLeft(Node(3,None,None))
+tree.getRoot().setLeft(Node(5))
+tree.getRoot().getLeft().setLeft(Node(4))
+tree.getRoot().getLeft().setRight(Node(6))
+tree.getRoot().getLeft().getLeft().setLeft(Node(3))
 
-tree.getRoot().setRight(Node(17,None,None))
-tree.getRoot().getRight().setRight(Node(19,None,None))
-tree.getRoot().getRight().getRight().setLeft(Node(18,None,None))
-tree.getRoot().getRight().getRight().setRight(Node(21,None,None))
+tree.getRoot().setRight(Node(17))
+tree.getRoot().getRight().setRight(Node(19))
+tree.getRoot().getRight().getRight().setLeft(Node(18))
+tree.getRoot().getRight().getRight().setRight(Node(21))
 
 print("size:",tree.size(tree.getRoot()))
 print("print values :",tree.printValues(tree.getRoot()))

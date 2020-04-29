@@ -47,11 +47,22 @@ class BinaryTree():
         else:
             return self.numberInternalNodes(node.getLeft())+self.numberInternalNodes(node.getRight())+1
 
-    def height(self, node, x=-1):
-        if node == None:
-            return x
+    def height(self, node):
+         if node is None:
+            return -1
+         else :
+            left = self.height(node.getLeft())
+            right = self.height(node.getRight())
+            return max(left, right) + 1
+
+    def belongs(self, node, val):
+        if node is None:
+            return False
+        if node.getVal() == val:
+            return True
         else:
-            
+            return self.belongs(node.getRight(), val) or self.belongs(node.getLeft(), val)
+
 
 
 #PRINCIPAL
@@ -74,3 +85,5 @@ print("sum values :",tree.sumValues(tree.getRoot()))
 print("number leaves :",tree.numberLeaves(tree.getRoot()))
 print("number internal nodes:",tree.numberInternalNodes(tree.getRoot()))
 print("height :",tree.height(tree.getRoot()))
+val = 1
+print("belong :",val," ?",tree.belongs(tree.getRoot(),val))

@@ -21,6 +21,3 @@ class BinarySearchTree(BinaryTree):
 
     def findMin(self, node):
         return min((self.infixe(node)).split())
-
-    def findMax(self, node):
-        return max((self.infixe(node)).split())

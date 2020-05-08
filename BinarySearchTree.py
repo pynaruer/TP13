@@ -1,5 +1,4 @@
 from BinaryTree import *
-from Node import *
 
 
 #DEF FONCTIONS

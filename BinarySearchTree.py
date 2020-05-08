@@ -1,7 +1,9 @@
 from BinaryTree import *
 from Node import *
 
+
 #DEF FONCTIONS
+
 class BinarySearchTree(BinaryTree):
 
     def __init__(self, root):

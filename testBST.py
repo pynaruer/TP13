@@ -1,5 +1,6 @@
 from BinarySearchTree import *
 
+
 #PRINCIPAL
 
 tree = BinarySearchTree(Node(4))

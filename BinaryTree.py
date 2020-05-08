@@ -102,17 +102,16 @@ class BinaryTree():
         else:
             return str(self.postfixe(node.getLeft()))+str(self.postfixe(node.getRight()))+str(node.getVal()) + " "
 
-    def listeTree(self, node):
+    def listTree(self, node):
         if node == None:
             return ""
         elif node.getLeft() == None and node.getRight() == None:
             return [node.getVal()]
         else:
-            return [node.getVal(), (self.listeTree(node.getLeft())), self.listeTree(node.getRight())]
-
+            return [node.getVal(), (self.listTree(node.getLeft())), self.listTree(node.getRight())]
 
     def parcoursLargeur(self, node):
-        list = self.listeTree(node)
+        list = self.listTree(node)
         for elt in list:
             temp = ""
             if type(elt) == type(1):
